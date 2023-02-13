@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
-
+  constructor() { 
+    let image = "assets/wallpaper.jpg";
+  }
 }

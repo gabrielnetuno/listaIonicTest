@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar color="dark" mode="ios">
+
+    <ion-button slot="start" color="warning" id="botao-voltar">Voltar</ion-button>
+
+    <ion-title>Cadastre a sua lista de compras</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+ <form #form="ngForm" (ngSubmit)="update(form)">
+    <ion-item>
+
+      <ion-label>
+        Item:
+      </ion-label>
+
+      <ion-input type="text" name="produto" [ngModel]="produto.produto" placeholder="Nome do Produto">
+      </ion-input>
+
+    </ion-item>
+
+    <ion-item>
+
+      <ion-label>
+        Item:
+      </ion-label>
+
+      <ion-input type="text" name="quant" placeholder="Quantidade do Produto">
+      </ion-input>
+
+    </ion-item>
+
+
+    <ion-item>
+
+      <ion-label>
+        Item:
+      </ion-label>
+
+      <ion-input type="text" name="valor" placeholder="Valor do Produto">
+      </ion-input>
+
+      <ion-button type="submit" color="warning" expand="block">Atualizar</ion-button>
+    </ion-item>
+
+  </form>
+
+
+
+</ion-content>
